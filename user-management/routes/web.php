@@ -38,5 +38,6 @@ Route::post('/user/create', 'userController@createUser');
 Route::get('/user/all', 'userController@all');
 
 
-Route::get('/user/edit/{id}', 'userController@editUser');
+Route::get('/user/edit/{id}', 'userController@editUserView');
+Route::post('/user/edit/{id}', 'userController@editUser');
 Route::get('/user/delete/{id}', 'userController@deleteUser');

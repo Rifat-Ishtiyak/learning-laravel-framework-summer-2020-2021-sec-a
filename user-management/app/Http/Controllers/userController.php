@@ -22,14 +22,36 @@ class userController extends Controller
         return view('user.list')->with('userlist', $user);
     }
 
-    public function editUser($id){
+    public function editUserView($id){
         $user=$this->getUserList();
 
         if($id==1){
-            return view('user.edit', compact($user[0][1]));
+            return view('user.edit')
+                        ->withuser($user[0]);
         }
-        
+        elseif($id==2){
+            return view('user.edit')
+                        ->withuser($user[1]);
+        }
+        elseif($id==3){
+            return view('user.edit')
+                        ->withuser($user[2]);
+        }
+        elseif($id==4){
+            return view('user.edit')
+                        ->withuser($user[3]);
+        }
+        elseif($id==5){
+            return view('user.edit')
+                        ->withuser($user[4]);
+        }
     } 
+
+    public function editUser(Request $req, $id){
+        $user=$this->getUserList();
+        // echo array_search($id, $user[1]);
+
+    }
 
     public function deleteUser($id){
 

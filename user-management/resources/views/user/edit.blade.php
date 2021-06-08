@@ -11,23 +11,23 @@
                     <table border="0">
                         <tr>
                             <td>ID</td>
-                            <td>: <input type="text" name="id"></td>
+                            <td>: <input type="text" name="id" value="{{$user[0]}}"></td>
                         </tr>
                         <tr>
                             <td>User Name</td>
-                            <td>: <input type="text" name="uname"></td>
+                            <td>: <input type="text" name="uname" value="{{$user[1]}}"></td>
                         </tr>
                         <tr>
                             <td>Email</td>
-                            <td>: <input type="email" name="mail"></td>
+                            <td>: <input type="email" name="mail" value="{{$user[3]}}"></td>
                         </tr>
                         <tr>
                             <td>Password</td>
-                            <td>: <input type="password" name="pass"></td>
+                            <td>: <input type="text" name="pass" value="{{$user[2]}}"></td>
                         </tr>
                         <tr>
                             <td>Type</td>
-                            <td>: <input type="text" name="type"></td>
+                            <td>: <input type="text" name="type" value="{{$user[4]}}"></td>
                         </tr>
                         <tr>
                             <td colspan="2" align="right">
